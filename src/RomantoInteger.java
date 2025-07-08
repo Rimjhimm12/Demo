@@ -19,14 +19,14 @@ public class RomantoInteger {
             if(i+1 < romanNumber.length()){
                 int next = map.get(romanNumber.charAt(i + 1));
                 if(current<next){
-                    sum- =current;
+                    sum=sum-current;
                 }
                 else {
-                    sum+=current;
+                    sum=sum + current;
 
                 }
             }else {
-                sum+=current;
+                sum=sum+current;
             }
         }
         System.out.println(sum);
