@@ -3,7 +3,10 @@ import java.util.Arrays;
 public class Palindrome {
     public boolean isPlindrome(int number){
         boolean flag = false;
-
+        if(number<=0){
+            System.out.println("Given number is not pelindrome");
+            return flag;
+        }
         int original = number;
         int result = 0;
         while(number != 0) {
@@ -41,15 +44,8 @@ public class Palindrome {
     }
     public static void main(String[] args) {
         Palindrome obj = new Palindrome();
-        System.out.println(obj.isPlindrome(1102011));
+        System.out.println(obj.isPlindrome(101));
         System.out.println(obj.isPlindrome("maow"));
-
-
-
-
-
-
-
 
     }
 
