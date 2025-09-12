@@ -1,5 +1,5 @@
 public class Factorial{
-    public long getFactorial(long number){
+    public static long getFactorial(long number){
         int original = (int)number;
         for(int i =(int)number-1; i>=1; i--){
             number = number*i;
@@ -10,6 +10,6 @@ public class Factorial{
     public static void main(String[] args) {
         Factorial obj = new Factorial();
     
-        System.out.println(obj.getFactorial(17));
+        System.out.println(getFactorial(13));
     }
 }
